@@ -1,0 +1,46 @@
+[Adblock Plus 2.0]
+! Title: Twitter mobile filter
+! Last modified: 2020/6/16 19:45 JST
+! Expires: 6 hours (update frequency)
+
+twitter.com##[data-testid="eventHero"]
+twitter.com##[aria-label="タイムライン: 話題を検索"]
+twitter.com##[aria-label="タイムライン: トレンド"]
+twitter.com##[aria-label="おすすめユーザー"]
+twitter.com##[aria-label="おすすめユーザー"]:nth-ancestor(1)
+
+twitter.com##h2[aria-level="2"] span:has-text(おすすめユーザー)
+twitter.com##div[aria-label^="タイムライン: ホームタイムライン"] div[data-testid="UserCell"]
+twitter.com##div[aria-label^="タイムライン:"][aria-label$="のツイート"] div[data-testid="UserCell"]
+twitter.com##a[href^="/i/connect_people"]
+
+twitter.com##a[href^="/explore/tabs"]
+twitter.com##nav[role="navigation"] a[href^="/explore/tabs"]
+twitter.com##nav[role="navigation"] a[href^="/explore/tabs"]:nth-ancestor(3)
+
+twitter.com##article a[href^="/i/user"]:has-text(がいいねしました):nth-ancestor(13)
+twitter.com##article a[href^="/i/user"]:has-text(がフォロー):nth-ancestor(13)
+twitter.com##article a[href^="/i/timeline"]:has-text(がいいねしました):nth-ancestor(13)
+twitter.com##article a[href^="/i/timeline"]:has-text(がフォロー):nth-ancestor(13)
+
+! 副作用あるかも
+twitter.com##[data-testid="trend"]
+
+! タイムラインのリプライ、リツイート、いいね数を非表示
+twitter.com##div[data-testid=primaryColumn] article div[role=group] div[role=button] span
+
+! フォロワー数を非表示 
+twitter.com##div[data-testid=primaryColumn]>div>div>div>div>div>div.css-1dbjc4n.r-1cad53l>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:last-child>a>span.r-vw2c0b
+twitter.com##div[data-testid=primaryColumn]>div>div>div>div>div>div.css-1dbjc4n.r-1ifxtd0>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:last-child>a>span.r-vw2c0b
+twitter.com##div[data-testid=primaryColumn]>div>div>div>div>div>div.css-1dbjc4n.r-dr54s0>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:last-child>a>span.r-vw2c0b
+twitter.com##div[data-testid=primaryColumn]>div>div>div>div>div>div.css-1dbjc4n.r-ku1wi2>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:last-child>a>span.r-vw2c0b
+twitter.com##div[data-testid=primaryColumn]>div>div>div>div>div>div.css-1dbjc4n.r-le4sbl>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:last-child>a>span.r-vw2c0b
+
+! フォロー中数を非表示
+twitter.com##div[data-testid=primaryColumn]>div>div>div>div>div>div.css-1dbjc4n.r-1cad53l>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:first-child>a>span.r-vw2c0b
+twitter.com##div[data-testid=primaryColumn]>div>div>div>div>div>div.css-1dbjc4n.r-1ifxtd0>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:first-child>a>span.r-vw2c0b
+twitter.com##div[data-testid=primaryColumn]>div>div>div>div>div>div.css-1dbjc4n.r-dr54s0>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:first-child>a>span.r-vw2c0b
+twitter.com##div[data-testid=primaryColumn]>div>div>div>div>div>div.css-1dbjc4n.r-ku1wi2>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:first-child>a>span.r-vw2c0b
+twitter.com##div[data-testid=primaryColumn]>div>div>div>div>div>div.css-1dbjc4n.r-le4sbl>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:first-child>a>span.r-vw2c0b
+ 
+
