@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Title: Twitter mobile filter
+! Title: Twitter filter for mobile and PC
 ! Last modified: 2020/6/16 19:45 JST
 ! Expires: 6 hours (update frequency)
 
