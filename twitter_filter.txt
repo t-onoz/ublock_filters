@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Twitter filter for mobile and PC
-! Last modified: 2020/6/30 19:30 JST
+! Last modified: 2020/6/30 19:35 JST
 ! Expires: 6 hours (update frequency)
 
 twitter.com##[data-testid="eventHero"]
@@ -47,3 +47,6 @@ twitter.com##main a[href$="/followers"]>span:first-child
 ! 副作用あるかも
 twitter.com##[data-testid="trend"]
 
+! その他のツイート
+twitter.com##:xpath(//div[not(@*)]/div/div/h2/div[contains(@dir,"auto")]/span[contains(text(),"その他のツイート")][not(@dir)]/ancestor::div[not(@*)]/following-sibling::div[not(@*)])
+twitter.com##:xpath(//div[not(@*)]/div/div/h2/div[contains(@dir,"auto")]/span[contains(text(),"その他のツイート")][not(@dir)])
