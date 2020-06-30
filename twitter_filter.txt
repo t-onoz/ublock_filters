@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Twitter filter for mobile and PC
-! Last modified: 2020/6/16 19:45 JST
+! Last modified: 2020/6/30 19:30 JST
 ! Expires: 6 hours (update frequency)
 
 twitter.com##[data-testid="eventHero"]
@@ -23,9 +23,6 @@ twitter.com##article a[href^="/i/user"]:has-text(がフォロー):nth-ancestor(1
 twitter.com##article a[href^="/i/timeline"]:has-text(がいいねしました):nth-ancestor(13)
 twitter.com##article a[href^="/i/timeline"]:has-text(がフォロー):nth-ancestor(13)
 
-! 副作用あるかも
-twitter.com##[data-testid="trend"]
-
 ! タイムラインのリプライ、リツイート、いいね数を非表示
 twitter.com##div[data-testid=primaryColumn] article div[role=group] div[role=button] span
 
@@ -42,5 +39,11 @@ twitter.com##div[data-testid=primaryColumn]>div>div>div>div>div>div.css-1dbjc4n.
 twitter.com##div[data-testid=primaryColumn]>div>div>div>div>div>div.css-1dbjc4n.r-dr54s0>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:first-child>a>span.r-vw2c0b
 twitter.com##div[data-testid=primaryColumn]>div>div>div>div>div>div.css-1dbjc4n.r-ku1wi2>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:first-child>a>span.r-vw2c0b
 twitter.com##div[data-testid=primaryColumn]>div>div>div>div>div>div.css-1dbjc4n.r-le4sbl>div.css-1dbjc4n.r-18u37iz.r-1w6e6rj>div:first-child>a>span.r-vw2c0b
- 
+
+! オリジナルなので副作用あるかも
+twitter.com##main a[href$="/following"]>span:first-child
+twitter.com##main a[href$="/followers"]>span:first-child
+
+! 副作用あるかも
+twitter.com##[data-testid="trend"]
 
