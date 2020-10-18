@@ -50,3 +50,8 @@ twitter.com##[data-testid="trend"]
 ! その他のツイート
 twitter.com##:xpath(//div[not(@*)]/div/div/h2/div[contains(@dir,"auto")]/span[contains(text(),"その他のツイート")][not(@dir)]/ancestor::div[not(@*)]/following-sibling::div[not(@*)])
 twitter.com##:xpath(//div[not(@*)]/div/div/h2/div[contains(@dir,"auto")]/span[contains(text(),"その他のツイート")][not(@dir)])
+
+! おすすめトピック
+twitter.com##div[aria-label^="タイムライン:"] a[href^="/i/topics/"]:nth-ancestor(2)
+twitter.com##div[aria-label^="タイムライン:"] a[href^="/i/flow/topics_selector"]:nth-ancestor(2)
+twitter.com##h2[aria-level="2"] span:has-text(おすすめトピック):nth-ancestor(3)
