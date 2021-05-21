@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Twitter filter for mobile and PC
-! Last modified: 2021/05/21 21:17 JST
+! Last modified: 2021/05/21 21:29 JST
 ! Expires: 6 hours (update frequency)
 
 twitter.com##[data-testid="eventHero"]
@@ -57,4 +57,6 @@ twitter.com##div[aria-label^="タイムライン:"] a[href^="/i/flow/topics_sele
 twitter.com##h2[aria-level="2"] span:has-text(おすすめトピック):nth-ancestor(3)
 
 ! 「まず記事を読んでみませんか？」
-twitter.com##div[role="dialog"] span:has-text(まず記事を読んでみませんか):nth-ancestor(2)
+! twitter.com##div[role="dialog"] span:has-text(まず記事を読んでみませんか):nth-ancestor(2)
+! こっちの方が速い
+twitter.com##div[role="dialog"] a[href^="http"]
