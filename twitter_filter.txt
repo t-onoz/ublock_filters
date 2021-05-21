@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Twitter filter for mobile and PC
-! Last modified: 2020/10/18 12:01 JST
+! Last modified: 2021/05/21 21:17 JST
 ! Expires: 6 hours (update frequency)
 
 twitter.com##[data-testid="eventHero"]
