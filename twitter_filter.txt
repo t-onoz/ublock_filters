@@ -55,3 +55,6 @@ twitter.com##:xpath(//div[not(@*)]/div/div/h2/div[contains(@dir,"auto")]/span[co
 twitter.com##div[aria-label^="タイムライン:"] a[href^="/i/topics/"]:nth-ancestor(2)
 twitter.com##div[aria-label^="タイムライン:"] a[href^="/i/flow/topics_selector"]:nth-ancestor(2)
 twitter.com##h2[aria-level="2"] span:has-text(おすすめトピック):nth-ancestor(3)
+
+! 「まず記事を読んでみませんか？」
+twitter.com##div[role="dialog"] span:has-text(まず記事を読んでみませんか):nth-ancestor(2)
